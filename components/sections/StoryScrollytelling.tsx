@@ -21,9 +21,21 @@ const services = [
 ];
 
 const team = [
-    { name: "Mohammad Aldomi", role: "Full-stak developer", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" },
-    { name: "Sultan", role: "Creative Director", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop" },
-    { name: "Mahmoud", role: "Graphic Designe", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop" },
+    {
+        name: "Mohammad Aldomi",
+        role: "Full-stack Developer",
+        image: "https://api.dicebear.com/9.x/adventurer/svg?seed=MohammadAldomi"
+    },
+    {
+        name: "Sultan",
+        role: "Creative Director",
+        image: "https://api.dicebear.com/9.x/adventurer/svg?seed=SultanCreative"
+    },
+    {
+        name: "Mahmoud",
+        role: "Graphic Designer",
+        image: "https://api.dicebear.com/9.x/adventurer/svg?seed=MahmoudDesigner"
+    },
 ];
 
 const clients = [
