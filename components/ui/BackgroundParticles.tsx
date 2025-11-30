@@ -10,13 +10,15 @@ export default function BackgroundParticles() {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
+        if (init) return;
+
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
             await loadImageShape(engine);
         }).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [init]);
 
     if (!init) return null;
 
