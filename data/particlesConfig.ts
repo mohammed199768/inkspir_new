@@ -10,28 +10,14 @@ export const particlesConfig: ISourceOptions = {
     fpsLimit: 60,
     particles: {
         number: {
-            value: 40,
+            value: 100,
             density: {
                 enable: true,
                 width: 1000,
             },
         },
-        color: {
-            value: ["#6b4092", "#f2e9ff"],
-        },
-        shape: {
-            type: "circle",
-        },
-        opacity: {
-            value: { min: 0.3, max: 0.6 },
-            animation: {
-                enable: true,
-                speed: 0.5,
-                sync: false,
-            },
-        },
         size: {
-            value: { min: 4, max: 12 },
+            value: { min: 1, max: 3 },
             animation: {
                 enable: true,
                 speed: 2,
@@ -43,23 +29,30 @@ export const particlesConfig: ISourceOptions = {
         },
         move: {
             enable: true,
-            speed: 1,
-            direction: "top",
+            speed: 2,
+            direction: "none",
             random: true,
             straight: false,
             outModes: {
                 default: "out",
-                top: "destroy",
-                bottom: "none",
             },
             attract: {
                 enable: false,
             },
         },
+        rotate: {
+            value: { min: 0, max: 360 },
+            direction: "random",
+            animation: {
+                enable: true,
+                speed: 3,
+                sync: false,
+            },
+        },
         life: {
             duration: {
                 sync: false,
-                value: 15,
+                value: 0,
             },
             count: 0,
             delay: {
@@ -75,11 +68,11 @@ export const particlesConfig: ISourceOptions = {
         events: {
             onHover: {
                 enable: true,
-                mode: "bubble",
+                mode: "attract",
             },
             onClick: {
                 enable: true,
-                mode: "repulse",
+                mode: "push",
             },
             resize: {
                 enable: true,
@@ -87,15 +80,16 @@ export const particlesConfig: ISourceOptions = {
             },
         },
         modes: {
-            bubble: {
+            attract: {
                 distance: 200,
-                duration: 2,
-                opacity: 0.8,
-                size: 15,
-            },
-            repulse: {
-                distance: 100,
                 duration: 0.4,
+                easing: "ease-out-quad",
+                factor: 3,
+                maxSpeed: 50,
+                speed: 1,
+            },
+            push: {
+                quantity: 4,
             },
         },
     },

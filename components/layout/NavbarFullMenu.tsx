@@ -53,10 +53,11 @@ export default function NavbarFullMenu() {
     const handleLinkClick = (href: string) => {
         setIsOpen(false);
 
-        // Smooth scroll to section
-        if (href.startsWith("#")) {
+        // Smooth scroll to section if it's an anchor link
+        if (href.includes("#")) {
+            const targetId = href.split("#")[1];
             setTimeout(() => {
-                const element = document.querySelector(href);
+                const element = document.getElementById(targetId);
                 if (element) {
                     element.scrollIntoView({ behavior: "smooth", block: "start" });
                 }

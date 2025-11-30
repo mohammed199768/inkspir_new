@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { loadImageShape } from "@tsparticles/shape-image";
 import { particlesConfig } from "@/data/particlesConfig";
 
 export default function BackgroundParticles() {
@@ -11,6 +12,7 @@ export default function BackgroundParticles() {
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
+            await loadImageShape(engine);
         }).then(() => {
             setInit(true);
         });

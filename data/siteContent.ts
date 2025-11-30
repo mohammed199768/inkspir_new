@@ -7,10 +7,8 @@ export const siteContent = {
     navigation: {
         menuItems: [
             { label: "Home", href: "/" },
-            { label: "Story", href: "#story" },
-            { label: "Work", href: "#work" },
-            { label: "Process", href: "#process" },
-            { label: "Contact", href: "#contact" },
+            { label: "portfolio", href: "/portfolio" },
+            { label: "Contact", href: "/contact" },
         ],
     },
     hero: {
@@ -20,11 +18,11 @@ export const siteContent = {
         ],
         subtitle: "We turn raw ideas into cinematic digital experiences.",
         primaryCtaLabel: "Start Project",
-        primaryCtaHref: "#contact",
+        primaryCtaHref: "/contact",
         helperTop: "We are open!",
         helperBottom: "Book your project in advance",
-        scrollLabelTop: "Scroll to",
-        scrollLabelBottom: "find out more",
+        scrollLabelTop: " ",
+        scrollLabelBottom: " ",
     },
     storySections: [
         {
@@ -120,6 +118,6 @@ export const siteContent = {
         title: "Ready to craft your next scene?",
         description: "Let’s turn your idea into a cinematic experience.",
         buttonLabel: "Start Your Project",
-        buttonHref: "#contact",
+        buttonHref: "/contact",
     },
 };
