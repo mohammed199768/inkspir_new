@@ -165,7 +165,7 @@ export default function StoryScrollytelling() {
                     <div className="fade-up relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-900/20 aspect-video">
                         <iframe
                             className="w-full h-full object-cover"
-                            src="https://www.youtube.com/embed/Cw6JGvQWFcM?autoplay=1&mute=1&loop=1&playlist=Cw6JGvQWFcM&controls=0&showinfo=0&rel=0&modestbranding=1"
+                            src=""
                             title="Inkspire Studio Showreel"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
